@@ -1,0 +1,78 @@
+.extencion{
+    max-width: 400px;
+    background-color: var(--text-second-color);
+    border: 5px solid var(--text-second-color);
+    border-radius: 10px;
+}
+
+.card{
+    position: relative;
+    background-color: var(--text-color);
+    height: 490px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card h3{
+    color: var(--background-color);
+    margin: 5px;
+    padding-top: 5px;
+    border-top: 5px solid var(--text-second-color);
+}
+
+.card p{
+    color: var(--background-color);
+    margin: 0 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+.card .stats{
+    color: var(--text-second-color);
+}
+
+.card .etiqueta{
+    background-color: var(--text-second-color);
+    width: min-content;
+    padding: 5px 10px;
+    border-radius: 12px;
+    margin: 0 5px;
+    color: var(--text-color);
+}
+
+.card .portada{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--text-primary-color);
+    transition: bottom 0.5s ease-in-out;
+}
+
+.card:hover .portada{
+    bottom: -80%;
+}
+
+@media (max-width: 1250px) {
+    .extencion{
+        max-width: 200px;
+    }
+    .card{
+        height: 280px;
+    }
+    .card h3{
+        padding-top: 2px;
+        border-top: 2px solid var(--text-second-color);
+        font-size: 15px;
+    }
+    .card p{
+        font-size: 10px;
+    
+    }
+    .card .portada{
+        width: 200px;
+        height: 235px;
+    }
+    .extencion .subimg{
+        width: 50px;
+        height: 50px;
+    }
+  }
